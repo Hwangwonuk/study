@@ -1,1 +1,2 @@
 # study
+Type Script
