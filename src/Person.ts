@@ -1,10 +1,12 @@
+import {Occupation} from "./Occupation";
+
 export class Person {
   /* 이름 */
   private _name: string;
   /* 직업 */
-  private _occupation: string;
+  private _occupation: Occupation;
 
-  constructor(name: string, occupation: string) {
+  constructor(name: string, occupation: Occupation) {
     this._name = name;
     this._occupation = occupation;
   }
@@ -26,11 +28,11 @@ export class Person {
     this._name = value;
   }
 
-  get occupation(): string {
+  get occupation(): Occupation {
     return this._occupation;
   }
 
-  set occupation(value: string) {
+  set occupation(value: Occupation) {
     this._occupation = value;
   }
 
